@@ -36,7 +36,7 @@ def process_gnss(coordinates):
 # add all the actors - vehicles, sensors to destroy at the end
 actor_list = []
 try:
-    client = carla.Client('localhost', 2000)
+    client = carla.Client('127.0.0.1', 2000)
     client.set_timeout(2.0)
 
     world = client.get_world()
